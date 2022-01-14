@@ -1,0 +1,51 @@
+ion-content {
+  background-color: black;
+}
+
+ion-card {
+  width: 90%;
+
+  ion-card-title,
+  ion-card-subtitle {
+    padding-left: 10px;
+  }
+
+  ion-card-title {
+    padding-bottom: 5px;
+    font-size: 20px;
+  }
+
+  ion-card-subtitle {
+    padding-top: 7px;
+  }
+
+  img {
+    object-fit: cover;
+  }
+}
+
+.title {
+  padding-left: 20px;
+  padding-right: 20px;
+  background-image:
+    linear-gradient(to bottom, rgba(0, 0, 0, 0.2)0%, rgb(0, 0, 0)100%),
+    url('https://images.unsplash.com/photo-1490559328922-7bf6c9d4efa0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80');
+  height: 175px;
+  background-size: cover;
+  padding-top: 40px;
+  color: white;
+}
+
+h2 {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 25x;
+  text-align: center;
+  margin: 0;
+}
+
+.create {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  font-weight: lighter;
+}

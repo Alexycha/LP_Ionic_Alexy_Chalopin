@@ -1,0 +1,33 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Home
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content [fullscreen]="true">
+  <div id="container">
+    <h2>ASTON MARTIN</h2>
+    <h4>Découvrez les modèles iconiques de la marque</h4>
+  </div>
+  <ion-card [routerLink]="['/tab/home/aston-history/']">
+    <img src="https://images.unsplash.com/photo-1611656667636-6c4b9f4a08e0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=749&q=80" />
+    <ion-card-header>
+      <ion-card-subtitle>Histoire</ion-card-subtitle>
+      <ion-card-title>Aston Martin</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      Cliquez pour découvrir l'histoire
+    </ion-card-content>
+  </ion-card>
+  <ion-card [routerLink]="['/tab/home/aston-bond/']">
+    <img src="https://www.booska-p.com/wp-content/uploads/2022/01/1515b-1024x683-1-1024x750.jpg" />
+    <ion-card-header>
+      <ion-card-subtitle>Histoire</ion-card-subtitle>
+      <ion-card-title>James Bond & Aston, un Mythe</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      Une histoire d'amour
+    </ion-card-content>
+  </ion-card>
+</ion-content>

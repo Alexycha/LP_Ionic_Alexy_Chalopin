@@ -1,0 +1,39 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/tabs/astons"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Nouveau Modèle</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-item>
+    <ion-label>Photo d'exposition :</ion-label>
+    <ion-input type="text" [(ngModel)]="aston.pictureLink"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label>Marque :</ion-label>
+    <ion-input type="text" [(ngModel)]="aston.brand"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label>Modèle :</ion-label>
+    <ion-input type="text" [(ngModel)]="aston.model"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label>Prix :</ion-label>
+    <ion-input type="text" [(ngModel)]="aston.price"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label>Date de commercialisation :</ion-label>
+    <ion-input type="text" [(ngModel)]="aston.releaseDate"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label>Cheveaux :</ion-label>
+    <ion-input type="text" [(ngModel)]="aston.horsePower"></ion-input>
+  </ion-item>
+  <p class="text-center">
+    <ion-button (click)="add()">Envoyer</ion-button>
+  </p>
+</ion-content>
+

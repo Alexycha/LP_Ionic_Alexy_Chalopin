@@ -1,0 +1,54 @@
+ion-toolbar {
+  text-align: center;
+  margin: 0;
+}
+
+ion-title {
+  color: lightgrey;
+  text-align: center;
+}
+
+#container {
+  font-family: 'Times New Roman', Times, serif;
+  background-image:
+    linear-gradient(to bottom, rgba(0, 0, 0, 0.055)0%, rgb(0, 0, 0)100%),
+    url('https://amsc-prod-cd.azureedge.net/-/media/aston-martin/images/brand/brand_07_asset_13.jpg?h=730&width=2560&format=webp&quality=70');
+  height: 200px;
+  background-size: cover;
+  text-align: center;
+  color: white;
+
+  h2 {
+    font-weight: lighter;
+    font-size: 40px;
+    text-align: center;
+    padding-top: 40px;
+    margin: 0;
+  }
+}
+
+.debut,
+.milieu,
+.ford,
+.consecration,
+.sombre {
+  h2 {
+    font-weight: bolder;
+    font-size: 30px;
+  }
+
+  padding: 20px;
+  font-family: 'Times New Roman',
+  Times,
+  serif;
+  font-size: 20px;
+
+  img {
+    object-fit: cover;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    border-radius: 10px;
+  }
+}

@@ -1,0 +1,69 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/tabs/astons"></ion-back-button>
+    </ion-buttons>
+    <ion-title *ngIf="aston">{{aston.title}}</ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+  <div *ngIf="!modif">
+    <ion-grid *ngIf="aston">
+      <ion-row>
+        <ion-col>
+          <ion-button (click)="setModif()">Modifier</ion-button>
+          <ion-button (click)="onDelete(aston.id)">
+            <ion-icon name="trash"></ion-icon>
+          </ion-button>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+          <img [src]="aston.pictureLink">
+          <strong>Modèle : </strong> 
+          {{aston.model}}
+      </ion-row>
+      <ion-row>
+        <strong>Commercialisation : </strong>
+        {{aston.releaseDate}} <br>
+      </ion-row>
+      <ion-row>
+        <strong>Prix : </strong>
+        {{aston.price}} € <br>
+      </ion-row>
+      <ion-row>
+        <strong>Puissance : </strong>
+        {{aston.horsePower}} Cv <br>
+      </ion-row>
+    </ion-grid>
+  </div>
+  <div *ngIf="modif && aston">
+    <ion-item>
+      <ion-label>Image d'exposition</ion-label>
+      <ion-input type="text" [(ngModel)]="aston.pictureLink"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label>Marque : </ion-label>
+      <ion-input type="text" [(ngModel)]="aston.brand"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label>Modèle : </ion-label>
+      <ion-input type="text" [(ngModel)]="aston.model"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label>Commercialisation : </ion-label>
+      <ion-input type="text" [(ngModel)]="aston.releaseDate"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label>Prix : </ion-label>
+      <ion-input type="text" [(ngModel)]="aston.price"></ion-input>
+    </ion-item>
+    <ion-item>
+    <ion-label>Puissance : </ion-label>
+    <ion-input type="text" [(ngModel)]="aston.horsePower"></ion-input>
+  </ion-item>
+    <p class="text-center">
+      <ion-button (click)="onModif()">Modifier</ion-button>
+    </p>
+  </div>
+</ion-content>
+

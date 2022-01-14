@@ -1,0 +1,21 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Modèles</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <h2 class ="title">Découvrez les modèles ayant construit le mythe Aston Martin</h2>
+<div class ="create">
+  <h4>Ajoutez votre modèle favori</h4>
+<ion-button routerLink="/tab/astons/new">Création</ion-button>
+</div>
+    <ion-col *ngFor="let aston of astons">
+    <ion-card [routerLink]="['/tab/astons/',aston.id]">
+        <img [src]="aston.pictureLink" [alt]="aston.brand">
+        <ion-card-subtitle>{{aston.brand}}</ion-card-subtitle>
+        <ion-card-title>{{aston.model}}</ion-card-title>
+
+    </ion-card>
+  </ion-col>
+</ion-content>
